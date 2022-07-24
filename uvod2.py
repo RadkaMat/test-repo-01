@@ -1,4 +1,7 @@
-muj_vek_ted = 26
-rok_ted = 2022
-muj_rok_narozeni = rok_ted - muj_vek_ted
-print(muj_rok_narozeni)
+import streamlit as st
+st.title('Aplikace generování barev')
+st.write('Generátor náhodných barev do čtverce 5x5')
+obrazek = [[1,1,1,1],[1,0,1,0],[1,1,1,1],[1,0,0,0],[1,1,0,1],]
+from matplotlib import pyplot as plt
+plt.imshow(obrazek, cmap = 'gray')
+plt.colorbar()
